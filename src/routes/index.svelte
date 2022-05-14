@@ -2,8 +2,8 @@
   import Line from "svelte-chartjs/src/Line.svelte"
   // chart should look something like this:
   // y-axis should be profit
-  // x-axis should be wigets (0-30)
-  // 2 lines: profit w/out wiget maker and w/ widget maker
+  // x-axis should be widgets (0-30)
+  // 2 lines: profit w/out widget maker and w/ widget maker
 
   let widgetWithoutMakerCost = 5
   let widgetWithMakerCost = 3
@@ -16,12 +16,12 @@
   $: data = {
     labels: Array(31).fill(0).map((_, i) => i), // 0-30 using array fill trick
     datasets: [{
-      label: 'Cost (without wiget maker)',
+      label: 'Cost (without widget maker)',
       backgroundColor: 'rgb(255, 99, 132)',
       borderColor: 'rgb(255, 99, 132)',
       data: profitForWidgetWithoutMakerCost,
     }, {
-      label: 'Cost (with wiget maker)',
+      label: 'Cost (with widget maker)',
       backgroundColor: 'rgb(28, 188, 237)',
       borderColor: 'rgb(28, 188, 237)',
       data: profitForWidgetWithMakerCost,
