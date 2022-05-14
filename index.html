@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link rel="icon" href="/WidgetMake/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/WidgetMake/_app/assets/pages/__layout.svelte-31d131ce.css">
+	<link rel="modulepreload" href="/WidgetMake/_app/start-27273b22.js">
+	<link rel="modulepreload" href="/WidgetMake/_app/chunks/index-7e7e643d.js">
+	<link rel="modulepreload" href="/WidgetMake/_app/pages/__layout.svelte-a543d281.js">
+	<link rel="modulepreload" href="/WidgetMake/_app/pages/index.svelte-8ace7860.js">
+	</head>
+	<body>
+		<div>
+
+
+<h1 class="text-6xl text-center m-4">Widget Maker</h1>
+<h2 class="text-3xl text-center">Configure</h2>
+<div class="mx-auto w-1/2 my-2 border-gray-300 border p-5"><span class="text-lg text-gray-600">Base Widget Cost (without maker)</span>
+  <input class="block border-b border-gray-400" min="0" type="number" placeholder="Widget Cost (without maker)" value="5">
+  <span class="text-lg text-gray-600">Widget Cost (with maker)</span>
+  <input class="block border-b border-gray-400" min="0" type="number" placeholder="Widget Cost (with maker)" value="3">
+  <span class="text-lg text-gray-600">Widget Maker Cost</span>
+  <input class="block border-b border-gray-400" min="0" type="number" placeholder="Widget Maker Cost" value="20">
+  <span class="text-lg text-gray-600">Widget Retail Value</span>
+  <input class="block border-b border-gray-400" min="0" type="number" placeholder="Widget Retail Value" value="6"></div>
+<div class="flex justify-center items-center"><canvas width="600" height="400"></canvas></div>
+
+
+		<script type="module" data-hydrate="z7inyy">
+		import { start } from "/WidgetMake/_app/start-27273b22.js";
+		start({
+			target: document.querySelector('[data-hydrate="z7inyy"]').parentNode,
+			paths: {"base":"/WidgetMake","assets":"/WidgetMake"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/WidgetMake/_app/pages/__layout.svelte-a543d281.js"),
+						import("/WidgetMake/_app/pages/index.svelte-8ace7860.js")
+				],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
+	</body>
+</html>
