@@ -13,11 +13,11 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
+		paths: {
+			base: "/WidgetMake"
+		},
 		prerender: {
 			default: true
-		},
-		paths: {
-			base: "/widgetmake"
 		}
 	}
 };
