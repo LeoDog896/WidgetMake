@@ -10,18 +10,21 @@
   let widgetMakerCost = 20
   let widgetRetailValue = 6
 
+  $: profitForWidgetWithoutMakerCost = Array(31).fill(0).map((_, i) => (widgetRetailValue * i) - (widgetWithoutMakerCost * i))
+  $: profitForWidgetWithMakerCost = Array(31).fill(0).map((_, i) => (widgetRetailValue * i) - (widgetWithMakerCost * i) - widgetMakerCost)
+
   $: data = {
     labels: Array(31).fill(0).map((_, i) => i), // 0-30 using array fill trick
     datasets: [{
       label: 'Cost (without wiget maker)',
       backgroundColor: 'rgb(255, 99, 132)',
       borderColor: 'rgb(255, 99, 132)',
-      data: Array(31).fill(0).map((_, i) => (widgetRetailValue * i) - (widgetWithoutMakerCost * i)),
+      data: profitForWidgetWithoutMakerCost,
     }, {
       label: 'Cost (with wiget maker)',
       backgroundColor: 'rgb(28, 188, 237)',
       borderColor: 'rgb(28, 188, 237)',
-      data: Array(31).fill(0).map((_, i) => (widgetRetailValue * i) - (widgetWithMakerCost * i) - widgetMakerCost),
+      data: profitForWidgetWithMakerCost,
     }]
   }
 
