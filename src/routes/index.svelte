@@ -32,7 +32,7 @@
 <h1 class="text-6xl text-center m-4">Widget Maker</h1>
 <h2 class="text-3xl text-center">Configure</h2>
 <div class="mx-auto w-1/2 my-2 border-gray-300 border p-5">
-  <span class="text-lg text-gray-600">Widget Cost (without maker)</span>
+  <span class="text-lg text-gray-600">Base Widget Cost (without maker)</span>
   <input class="block border-b border-gray-400" min=0 type="number" placeholder = "Widget Cost (without maker)" bind:value={widgetWithoutMakerCost} />
   <span class="text-lg text-gray-600">Widget Cost (with maker)</span>
   <input class="block border-b border-gray-400" min=0 type="number" placeholder = "Widget Cost (with maker)" bind:value={widgetWithMakerCost} />
